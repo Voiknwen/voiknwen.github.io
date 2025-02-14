@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy Unique Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toggle-container">
+            <input type="checkbox" id="theme-toggle" class="theme-toggle">
+            <label for="theme-toggle" class="theme-toggle-label">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+                <span class="toggle-ball"></span>
+            </label>
+        </div>
+
+        <header class="header">
+            <h1 class="title">Welcome to the Anomaly</h1>
+            <p class="subtitle">Prepare to have your expectations shattered.</p>
+        </header>
+
+        <section class="content">
+            <div class="card" id="card1">
+                <div class="card-inner">
+                    <h2>Section 1: Glitch in the Matrix</h2>
+                    <p>This section demonstrates a glitchy, animated effect.  Hover over it!</p>
+                    <div class="glitch-container">
+                        <div class="glitch" data-text="Hello World">Hello World</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" id="card2">
+                <div class="card-inner">
+                <h2>Section 2:  The Void Stares Back</h2>
+                <p>A pulsating, dark void. Click it to expand.</p>
+                <div class="void"></div>
+                </div>
+            </div>
+
+            <div class="card" id="card3">
+              <div class="card-inner">
+                <h2>Section 3:  Impossible Geometry</h2>
+                <p>An interactive, impossible shape.  Drag it around!</p>
+                  <canvas id="impossible-shape" width="250" height="250"></canvas>
+              </div>
+            </div>
+
+            <div class="card" id="card4">
+                <div class="card-inner">
+                    <h2>Section 4:  Chaotic Particles</h2>
+                    <p>Click anywhere in this section to generate particles.</p>
+                    <canvas id="particle-canvas" width="300" height="200"></canvas>
+                </div>
+            </div>
+            <div class="card" id="card5">
+              <div class="card-inner">
+                <h2>Section 5: The Shifting Sands</h2>
+                <p>A constantly evolving landscape of color and form.  Move your mouse over it.</p>
+                    <canvas id="shifting-sands" width=400 height="250"></canvas>
+              </div>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <p>Made with <span class="heart">❤️</span> and a touch of madness.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
