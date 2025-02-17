@@ -11,31 +11,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Google AdSense Ad Unit 1 (e.g., for a header ad) -->
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-2610550266799229"
-         data-ad-slot="7258070737" 
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-
-    <!-- Google AdSense Ad Unit 2 (e.g., for a sidebar ad) -->
-    <!-- ONLY ADD THIS SECTION IF YOU HAVE A SECOND, DIFFERENT AD UNIT -->
-    <!--
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-2610550266799229"
-         data-ad-slot="ANOTHER_UNIQUE_AD_SLOT_ID"  Use your *second* Ad Unit ID here
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    -->
-
     <div class="container">
         <div class="toggle-container">
             <input type="checkbox" id="theme-toggle" class="theme-toggle">
@@ -59,6 +34,16 @@
                     <div class="glitch-container">
                         <div class="glitch" data-text="Hello World">Hello World</div>
                     </div>
+
+                    <!-- Ad Unit 1 (inside card1, before void) -->
+                    <div class="ad-container"> <ins class="adsbygoogle"
+                         style="display:block"
+                         data-ad-client="ca-pub-2610550266799229"
+                         data-ad-slot="7258070737"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    </div> <!-- ad-container div -->
+
                 </div>
             </div>
 
@@ -101,5 +86,11 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+      // Run adsbygoogle.push() *after* the DOM is fully loaded
+      document.addEventListener('DOMContentLoaded', function() {
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      });
+    </script>
 </body>
 </html>
