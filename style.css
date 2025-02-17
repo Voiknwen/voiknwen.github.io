@@ -17,6 +17,21 @@ body {
     perspective: 1000px; /* For 3D effects */
 }
 
+/* Add this to your style.css */
+.ad-container {
+  width: 100%; /* Allow ad to take up the full width */
+  /* Add a minimum height to ensure space is reserved */
+  min-height: 50px; /* Adjust this value as needed */
+  margin-bottom: 10px; /* Optional: Add some spacing below the ad */
+  /* Debugging: add a border to see the container */
+   /*border: 1px solid blue !important;*/
+}
+
+/* Ensure the ad-container is visible */
+.ad-container {
+    display: block !important; /* Ensure it's not accidentally hidden */
+    visibility: visible !important;  /* Ensure it's not invisible */
+}
 /* Header */
 .header {
     text-align: center;
